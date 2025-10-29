@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Melhor renderização de imagens */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove estilos padrão de inputs e buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Previne overflow de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove animações para usuários que preferem reduzir movimento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utilitários customizados */
+@layer utilities {
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
