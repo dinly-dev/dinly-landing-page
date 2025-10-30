@@ -4,22 +4,45 @@ import mascot from "../assets/images/mascot.png";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#1a1a2e] to-[#16213e]">
-      {/* Background effects */}
+    <section className="relative min-h-screen overflow-hidden bg-white">
+      {/* Background abstract shapes */}
       <div className="absolute inset-0">
+        {/* Large circle top-left */}
         <div
-          className="absolute left-1/4 top-1/4 h-96 w-96 animate-pulse"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(63, 89, 255, 0.3) 0%, transparent 70%)",
-          }}
+          className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-primary/10"
+          style={{ filter: "blur(60px)" }}
         />
+
+        {/* Medium circle top-right */}
         <div
-          className="absolute bottom-1/4 right-1/4 h-96 w-96 animate-pulse"
+          className="absolute -right-32 top-1/4 h-96 w-96 rounded-full bg-primary-light/15"
+          style={{ filter: "blur(80px)" }}
+        />
+
+        {/* Small circle middle-left */}
+        <div
+          className="absolute left-1/4 top-1/2 h-64 w-64 rounded-full bg-primary-lighter/20"
+          style={{ filter: "blur(50px)" }}
+        />
+
+        {/* Large ellipse bottom-right */}
+        <div
+          className="absolute -bottom-40 -right-20 h-96 w-[600px] rounded-full bg-primary/8"
+          style={{ filter: "blur(90px)", transform: "rotate(-45deg)" }}
+        />
+
+        {/* Medium circle bottom-left */}
+        <div
+          className="absolute bottom-1/4 left-1/3 h-72 w-72 rounded-full bg-secondary/12"
+          style={{ filter: "blur(70px)" }}
+        />
+
+        {/* Decorative geometric shapes */}
+        <div
+          className="absolute right-1/4 top-1/3 h-40 w-40 bg-primary/5"
           style={{
-            background:
-              "radial-gradient(circle, rgba(63, 89, 255, 0.2) 0%, transparent 70%)",
-            animationDelay: "1s",
+            borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%",
+            filter: "blur(40px)",
           }}
         />
       </div>
@@ -35,13 +58,13 @@ export default function Hero() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-balance text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
+            <h1 className="text-balance text-3xl font-bold leading-tight text-gray-900 md:text-4xl lg:text-5xl">
               Gestão financeira inteligente que{" "}
               <span className="text-primary">liberta</span>, não prende.
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base text-gray-300 md:text-lg">
+            <p className="text-base text-gray-600 md:text-lg">
               Automatize, simule e conquiste suas metas financeiras com IA e
               gamificação. Pouco esforço, grandes conquistas.
             </p>
@@ -65,12 +88,12 @@ export default function Hero() {
 
             {/* Form Card */}
             <motion.div
-              className="rounded-2xl border-2 border-primary bg-gradient-to-br from-primary-darker/40 to-primary-dark/20 p-6"
+              className="rounded-2xl border-2 border-primary bg-white/80 p-6 shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="mb-4 text-center text-lg font-bold text-white md:text-xl">
+              <h3 className="mb-4 text-center text-lg font-bold text-gray-900 md:text-xl">
                 Garanta seu acesso antecipado
               </h3>
 
@@ -79,7 +102,7 @@ export default function Hero() {
                 <motion.input
                   type="email"
                   placeholder="Seu melhor e-mail"
-                  className="w-full rounded-lg border border-primary/50 bg-white/10 px-4 py-3 text-white placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                   whileFocus={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
