@@ -53,20 +53,21 @@ export default function Hero() {
           {/* Left Column - Text Content */}
           <div className="flex flex-col space-y-6">
             {/* Logo */}
-            <div className="mb-1">
-              <img src={logo} alt="Logo Dinly" className="h-20" />
+            <div className="mb-0">
+              <img src={logo} alt="Logo Dinly" className="h-16" />
             </div>
 
             {/* Main Heading */}
             <h1 className="text-balance text-3xl font-bold leading-tight text-gray-900 md:text-4xl lg:text-5xl">
-              Gestão financeira inteligente que{" "}
-              <span className="text-primary">liberta</span>, não prende.
+              Disciplina é <span className="text-primary">liberdade</span>.{" "}
+              Organização é <span className="text-primary">poder</span>.
             </h1>
 
             {/* Subtitle */}
             <p className="text-base text-gray-600 md:text-lg">
-              Automatize, simule e conquiste suas metas financeiras com IA e
-              gamificação. Pouco esforço, grandes conquistas.
+              Automatize suas finanças com <strong>IA</strong>, transforme metas
+              em conquistas através de <strong>gamificação</strong> e receba
+              insights inteligentes. Pouco esforço, grandes conquistas.
             </p>
 
             {/* Alert Badge - Pulsing */}
@@ -82,7 +83,7 @@ export default function Hero() {
               }}
             >
               <p className="text-center text-sm font-semibold text-white md:text-base">
-                Apenas os 20 primeiros ganham o Botton customizado Dinly!
+                🎁 Apenas os 20 primeiros ganham o Botton exclusivo do Dinly!
               </p>
             </motion.div>
 
@@ -94,7 +95,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <h3 className="mb-4 text-center text-lg font-bold text-gray-900 md:text-xl">
-                Garanta seu acesso antecipado
+                Seja um dos primeiros a testar o Dinly
               </h3>
 
               {/* Form */}
