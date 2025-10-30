@@ -48,23 +48,24 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 h-screen">
-        <div className="grid h-full grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-12">
+      <div className="container-custom relative z-10 flex min-h-screen items-center py-8">
+        <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col items-center space-y-5 text-center lg:items-start lg:text-left">
             {/* Logo */}
-            <div className="mb-0">
-              <img src={logo} alt="Logo Dinly" className="h-16" />
+            <div>
+              <img src={logo} alt="Logo Dinly" className="h-14 md:h-16" />
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-balance text-3xl font-bold leading-tight text-gray-900 md:text-4xl lg:text-5xl">
+            <h1 className="text-balance text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
               Disciplina é <span className="text-primary">liberdade</span>.{" "}
               Organização é <span className="text-primary">poder</span>.
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base text-gray-600 md:text-lg">
+            {/* Subtitle */}
+            <p className="max-w-xl text-sm text-gray-600 sm:text-base md:text-lg lg:max-w-2xl">
               Automatize suas finanças com <strong>IA</strong>, transforme metas
               em conquistas através de <strong>gamificação</strong> e receba
               insights inteligentes. Pouco esforço, grandes conquistas.
@@ -72,7 +73,7 @@ export default function Hero() {
 
             {/* Alert Badge - Pulsing */}
             <motion.div
-              className="inline-block rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] px-6 py-3"
+              className="w-full max-w-md rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] px-4 py-2.5 sm:px-6 sm:py-3 lg:max-w-xl"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -82,19 +83,19 @@ export default function Hero() {
                 ease: "easeInOut",
               }}
             >
-              <p className="text-center text-sm font-semibold text-white md:text-base">
+              <p className="text-center text-xs font-semibold text-white sm:text-sm md:text-base">
                 🎁 Apenas os 20 primeiros ganham o Botton exclusivo do Dinly!
               </p>
             </motion.div>
 
             {/* Form Card */}
             <motion.div
-              className="rounded-2xl border-2 border-primary bg-white/80 p-6 shadow-lg"
+              className="w-full max-w-md rounded-2xl border-2 border-primary bg-white/80 p-5 shadow-lg sm:p-6 lg:max-w-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="mb-4 text-center text-lg font-bold text-gray-900 md:text-xl">
+              <h3 className="mb-4 text-center text-base font-bold text-gray-900 sm:text-lg md:text-xl">
                 Seja um dos primeiros a testar o Dinly
               </h3>
 
@@ -103,14 +104,14 @@ export default function Hero() {
                 <motion.input
                   type="email"
                   placeholder="Seu melhor e-mail"
-                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50 sm:text-base"
                   required
                   whileFocus={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 />
                 <motion.button
                   type="submit"
-                  className="w-full rounded-lg bg-primary px-6 py-3 font-semibold text-white"
+                  className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white sm:text-base"
                   whileHover={{
                     scale: 1.02,
                   }}
@@ -123,10 +124,10 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right Column - Mascot Image */}
-          <div className="flex items-center justify-center lg:justify-end">
+          {/* Right Column - Mascot Image - Hidden on mobile */}
+          <div className="hidden lg:flex lg:items-center lg:justify-end">
             <motion.div
-              className="relative h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]"
+              className="relative h-[400px] w-[400px] xl:h-[500px] xl:w-[500px]"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{
                 opacity: 1,

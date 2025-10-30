@@ -4,39 +4,39 @@ import ufrn from "../assets/images/ufrn.png";
 
 export default function Partners() {
   return (
-    <section className="bg-gray-50 py-8">
+    <section className="w-full overflow-hidden bg-gray-50 py-8 md:py-12">
       <div className="container-custom">
         {/* Title */}
-        <h2 className="mb-12 text-center text-2xl font-bold text-gray-900 md:text-3xl">
+        <h2 className="mb-8 text-center text-xl font-bold text-gray-900 sm:text-2xl md:mb-12 md:text-3xl">
           Com o Apoio de:
         </h2>
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-2 items-center justify-items-center gap-12 md:grid-cols-3 md:gap-12">
+        <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-6 sm:gap-8 md:flex-row md:gap-12">
           {/* SEBRAE */}
-          <div className="flex h-20 w-full items-center justify-center">
+          <div className="flex h-16 w-full max-w-[200px] items-center justify-center sm:h-20 sm:max-w-[240px] md:h-20 md:w-auto md:max-w-none md:flex-1">
             <img
               src={sebrae}
               alt="SEBRAE"
-              className="max-h-full w-auto object-contain opacity-70 transition-opacity hover:opacity-100"
+              className="max-h-full max-w-full object-contain opacity-70 transition-opacity hover:opacity-100"
             />
           </div>
 
           {/* UFRN */}
-          <div className="flex h-24 w-full items-center justify-center">
+          <div className="flex h-16 w-full max-w-[200px] items-center justify-center sm:h-20 sm:max-w-[240px] md:h-24 md:w-auto md:max-w-none md:flex-1">
             <img
               src={ufrn}
               alt="UFRN"
-              className="max-h-full w-auto object-contain opacity-70 transition-opacity hover:opacity-100"
+              className="max-h-full max-w-full object-contain opacity-70 transition-opacity hover:opacity-100"
             />
           </div>
 
           {/* Metrópole Digital */}
-          <div className="flex h-24 w-full items-center justify-center">
+          <div className="flex h-16 w-full max-w-[200px] items-center justify-center sm:h-20 sm:max-w-[240px] md:h-24 md:w-auto md:max-w-none md:flex-1">
             <img
               src={metropoleDigital}
               alt="Metrópole Digital"
-              className="max-h-full w-auto object-contain opacity-70 transition-opacity hover:opacity-100"
+              className="max-h-full max-w-full object-contain opacity-70 transition-opacity hover:opacity-100"
             />
           </div>
         </div>
