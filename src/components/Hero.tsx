@@ -49,11 +49,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container-custom relative z-10 h-screen">
-        <div className="grid h-full grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="grid h-full grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-12">
           {/* Left Column - Text Content */}
           <div className="flex flex-col space-y-6">
             {/* Logo */}
-            <div className="mb-2">
+            <div className="mb-1">
               <img src={logo} alt="Logo Dinly" className="h-20" />
             </div>
 

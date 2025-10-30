@@ -1,5 +1,5 @@
 import Hero from "./components/Hero";
-// import Partners from "./components/Partners";
+import Partners from "./components/Partners";
 // import Problem from "./components/Problem";
 // import Solution from "./components/Solution";
 // import Forms from "./components/Forms";
@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Hero />
-      {/* <Partners />
-      <Problem />
+      <Partners />
+      {/* <Problem />
       <Solution />
       <Forms />
       <Footer /> */}
