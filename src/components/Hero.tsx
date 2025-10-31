@@ -48,13 +48,13 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 flex min-h-screen items-center py-8">
+      <div className="container-custom relative z-10 flex min-h-screen items-center py-10">
         <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center space-y-5 text-center lg:items-start lg:text-left">
             {/* Logo */}
             <div>
-              <img src={logo} alt="Logo Dinly" className="h-14 md:h-20" />
+              <img src={logo} alt="Logo Dinly" className="h-14 md:h-24" />
             </div>
 
             {/* Main Heading */}
@@ -67,8 +67,7 @@ export default function Hero() {
             <p className="max-w-xl text-sm text-gray-600 sm:text-base md:text-lg lg:max-w-2xl">
               Automatize suas finanças com <strong>IA</strong>, transforme metas
               em conquistas através de <strong>gamificação</strong> e receba
-              insights inteligentes. <br />
-              Pouco esforço, grandes conquistas.
+              insights inteligentes. Pouco esforço, grandes conquistas.
             </p>
 
             {/* Form Card */}
