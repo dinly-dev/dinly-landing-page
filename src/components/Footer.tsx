@@ -14,52 +14,55 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 py-8 md:py-10">
       <div className="container-custom">
-        <div className="flex flex-col items-center space-y-6">
-          {/* Logo */}
-          <div>
-            <img src={logo} alt="Logo Dinly" className="h-10 md:h-12" />
-          </div>
+        <div className="flex flex-col space-y-6">
+          {/* Top Section - Icons Left, Logo Right */}
+          <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+            {/* Social Media Icons - Left */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://instagram.com/dinly"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://tiktok.com/@dinly"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
+                aria-label="TikTok"
+              >
+                <TikTokIcon />
+              </a>
+              <a
+                href="https://linkedin.com/company/dinly"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="mailto:contato@dinly.com.br"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
+                aria-label="E-mail"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
 
-          {/* Social Media Icons */}
-          <div className="flex items-center gap-4">
-            <a
-              href="https://instagram.com/dinly"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
-              aria-label="Instagram"
-            >
-              <Instagram className="h-5 w-5" />
-            </a>
-            <a
-              href="https://tiktok.com/@dinly"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
-              aria-label="TikTok"
-            >
-              <TikTokIcon />
-            </a>
-            <a
-              href="https://linkedin.com/company/dinly"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a
-              href="mailto:contato@dinly.com.br"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
-              aria-label="E-mail"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
+            {/* Logo - Right */}
+            <div>
+              <img src={logo} alt="Logo Dinly" className="h-10 md:h-12" />
+            </div>
           </div>
 
           {/* Divider */}
-          <div className="h-px w-full max-w-md bg-gray-200" />
+          <div className="h-px w-full bg-gray-200" />
 
           {/* Copyright */}
           <div className="text-center">
