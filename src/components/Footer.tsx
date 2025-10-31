@@ -57,7 +57,7 @@ export default function Footer() {
 
             {/* Logo - Right */}
             <div>
-              <img src={logo} alt="Logo Dinly" className="h-10 md:h-12" />
+              <img src={logo} alt="Logo Dinly" className="h-12 md:h-16" />
             </div>
           </div>
 

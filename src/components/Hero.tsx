@@ -48,7 +48,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 flex min-h-screen items-center py-10">
+      <div className="container-custom relative z-10 flex min-h-screen items-center p-10">
         <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Left Column - Text Content */}
           <div className="flex flex-col items-center space-y-5 text-center lg:items-start lg:text-left">
@@ -93,15 +93,40 @@ export default function Hero() {
                 />
                 <motion.button
                   type="submit"
-                  className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white sm:text-base"
+                  className="w-full rounded-xl bg-gradient-to-r from-primary to-primary-dark px-6 py-4 text-sm font-bold text-white shadow-lg sm:text-base"
                   whileHover={{
                     scale: 1.02,
+                    boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
                   }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
                 >
-                  Quero obter meu acesso antecipado
+                  Garantir Meu Acesso Antecipado
                 </motion.button>
+
+                {/* Trust Badge */}
+                <motion.div
+                  className="flex items-center gap-2 text-xs text-gray-500 sm:text-sm"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <svg
+                    className="h-5 w-5 text-primary"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span>
+                    Seus dados estão 100% seguros. Sem spam, prometido!
+                  </span>
+                </motion.div>
               </form>
             </motion.div>
 
