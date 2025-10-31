@@ -48,80 +48,158 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 flex min-h-screen items-center py-8">
-        <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+      <div className="container-custom relative z-10 flex min-h-screen items-center py-8 md:py-12">
+        <div className="grid w-full grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-10">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col items-center space-y-5 text-center lg:items-start lg:text-left">
+          <div className="flex flex-col items-center space-y-4 text-center lg:items-start lg:text-left">
             {/* Logo */}
             <div>
-              <img src={logo} alt="Logo Dinly" className="h-14 md:h-16" />
+              <img
+                src={logo}
+                alt="Dinly - Aplicativo de Finanças Pessoais com IA e Gamificação"
+                className="h-14 md:h-20"
+              />
             </div>
 
-            {/* Main Heading */}
+            {/* Main Heading - H1 Otimizado para SEO */}
             <h1 className="text-balance text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
-              Disciplina é <span className="text-primary">liberdade</span>.{" "}
-              Organização é <span className="text-primary">poder</span>.
+              Aplicativo de{" "}
+              <span className="text-primary">Finanças Pessoais</span> com IA
             </h1>
 
-            {/* Subtitle */}
-            {/* Subtitle */}
+            {/* Subtitle - Copy otimizada com palavras-chave */}
             <p className="max-w-xl text-sm text-gray-600 sm:text-base md:text-lg lg:max-w-2xl">
               Automatize suas finanças com <strong>IA</strong>, transforme metas
               em conquistas através de <strong>gamificação</strong> e receba
               insights inteligentes. Pouco esforço, grandes conquistas.
             </p>
 
-            {/* Alert Badge - Pulsing */}
-            <motion.div
-              className="w-full max-w-md rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] px-4 py-2.5 sm:px-6 sm:py-3 lg:max-w-xl"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              <p className="text-center text-xs font-semibold text-white sm:text-sm md:text-base">
-                🎁 Apenas os 20 primeiros ganham o Botton exclusivo do Dinly!
-              </p>
-            </motion.div>
-
             {/* Form Card */}
             <motion.div
-              className="w-full max-w-md rounded-2xl border-2 border-primary bg-white/80 p-5 shadow-lg sm:p-6 lg:max-w-xl"
+              className="w-full max-w-md rounded-2xl border-2 border-primary bg-white/80 p-4 shadow-lg sm:p-5 lg:max-w-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="mb-4 text-center text-base font-bold text-gray-900 sm:text-lg md:text-xl">
+              <h3 className="mb-3 text-center text-base font-bold text-gray-900 sm:text-lg">
                 Seja um dos primeiros a testar o Dinly
               </h3>
 
               {/* Form */}
-              <form className="flex flex-col gap-3">
+              <form className="flex flex-col gap-2.5">
                 <motion.input
                   type="email"
                   placeholder="Seu melhor e-mail"
-                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50 sm:text-base"
+                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50 sm:text-base"
                   required
                   whileFocus={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 />
                 <motion.button
                   type="submit"
-                  className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white sm:text-base"
+                  className="w-full rounded-xl bg-gradient-to-r from-primary to-primary-dark px-6 py-3 text-sm font-bold text-white shadow-lg sm:text-base"
                   whileHover={{
                     scale: 1.02,
+                    boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
                   }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
                 >
-                  Quero obter meu acesso antecipado
+                  Garantir Meu Acesso Antecipado
                 </motion.button>
+
+                {/* Trust Badge */}
+                <motion.div
+                  className="flex items-center gap-2 text-xs text-gray-500 sm:text-sm"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <svg
+                    className="h-5 w-5 text-primary"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span>
+                    Seus dados estão 100% seguros. Sem spam, prometido!
+                  </span>
+                </motion.div>
               </form>
             </motion.div>
+
+            {/* Mobile Mascot - Visible only on mobile */}
+            <div className="flex w-full justify-center lg:hidden">
+              <motion.div
+                className="relative mt-6 h-[240px] w-[240px] sm:h-[280px] sm:w-[280px]"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  y: [0, -15, 0],
+                }}
+                transition={{
+                  opacity: { duration: 1, ease: "easeOut" },
+                  scale: { duration: 1, ease: "easeOut" },
+                  y: {
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    repeatType: "loop",
+                  },
+                }}
+              >
+                {/* Mascot */}
+                <motion.div
+                  className="flex h-full w-full items-center justify-center rounded-full backdrop-blur-sm"
+                  animate={{
+                    scale: [1, 1.05, 1],
+                    rotate: [-3, 3, -3],
+                  }}
+                  transition={{
+                    scale: {
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      repeatType: "loop",
+                    },
+                    rotate: {
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      repeatType: "loop",
+                    },
+                  }}
+                >
+                  <img
+                    src={mascot}
+                    alt="Mascote Dinly - App de controle financeiro automático com inteligência artificial"
+                    className="h-full w-full object-cover"
+                  />
+                </motion.div>
+
+                {/* Glow effect around mascot */}
+                <motion.div
+                  className="absolute inset-0 -z-10 rounded-full bg-primary/30 blur-3xl"
+                  animate={{
+                    opacity: [0.4, 0.7, 0.4],
+                    scale: [1, 1.15, 1],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    repeatType: "loop",
+                  }}
+                />
+              </motion.div>
+            </div>
           </div>
 
           {/* Right Column - Mascot Image - Hidden on mobile */}
