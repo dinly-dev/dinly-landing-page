@@ -89,7 +89,7 @@ export default function Forms() {
                 >
                   <img
                     src={mascot}
-                    alt="Mascote do Dinly"
+                    alt="Mascote Dinly promovendo organização de finanças pessoais com gamificação"
                     className="h-full w-full object-cover"
                   />
                 </motion.div>
@@ -113,7 +113,7 @@ export default function Forms() {
 
             {/* Right Column - CTA Content */}
             <div className="flex flex-col items-center space-y-5 text-center lg:items-start lg:text-left">
-              {/* Main CTA Heading */}
+              {/* Main CTA Heading - H2 Otimizado */}
               <motion.h2
                 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl md:text-5xl"
                 initial={{ opacity: 0, y: 20 }}
@@ -126,7 +126,7 @@ export default function Forms() {
                 hoje
               </motion.h2>
 
-              {/* Subtitle */}
+              {/* Subtitle - Copy otimizada */}
               <motion.p
                 className="text-sm text-gray-600 sm:text-base md:text-lg"
                 initial={{ opacity: 0, y: 20 }}

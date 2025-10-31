@@ -57,7 +57,11 @@ export default function Footer() {
 
             {/* Logo - Right */}
             <div>
-              <img src={logo} alt="Logo Dinly" className="h-12 md:h-16" />
+              <img
+                src={logo}
+                alt="Dinly - Aplicativo de Gestão Financeira Pessoal"
+                className="h-12 md:h-16"
+              />
             </div>
           </div>
 

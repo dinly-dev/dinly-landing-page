@@ -51,7 +51,8 @@ export default function Problem() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            O problema é <span className="text-primary">real</span>
+            Por que é tão difícil ter{" "}
+            <span className="text-primary">controle financeiro</span>?
           </motion.h2>
 
           {/* Statistics */}
@@ -93,10 +94,11 @@ export default function Problem() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Planilhas não funcionam
+              Planilhas de Controle Financeiro Não Funcionam
             </h3>
             <p className="text-sm text-gray-600">
-              Você começa motivado, mas desiste em dias
+              Gestão financeira manual é demorada e frustrante. Você começa
+              motivado, mas desiste em dias
             </p>
           </motion.div>
 
@@ -115,10 +117,11 @@ export default function Problem() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Compras por impulso
+              Decisões Financeiras por Impulso
             </h3>
             <p className="text-sm text-gray-600">
-              Você compra e só depois vê o estrago no cartão
+              Sem ferramentas para simular o impacto de compras, você só vê o
+              estrago depois
             </p>
           </motion.div>
 

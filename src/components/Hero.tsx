@@ -48,22 +48,26 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 flex min-h-screen items-center p-10">
-        <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+      <div className="container-custom relative z-10 flex min-h-screen items-center py-8 md:py-12">
+        <div className="grid w-full grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-10">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col items-center space-y-5 text-center lg:items-start lg:text-left">
+          <div className="flex flex-col items-center space-y-4 text-center lg:items-start lg:text-left">
             {/* Logo */}
             <div>
-              <img src={logo} alt="Logo Dinly" className="h-14 md:h-24" />
+              <img
+                src={logo}
+                alt="Dinly - Aplicativo de Finanças Pessoais com IA e Gamificação"
+                className="h-14 md:h-20"
+              />
             </div>
 
-            {/* Main Heading */}
+            {/* Main Heading - H1 Otimizado para SEO */}
             <h1 className="text-balance text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
-              Disciplina é <span className="text-primary">liberdade</span>.{" "}
-              Organização é <span className="text-primary">poder</span>.
+              Aplicativo de{" "}
+              <span className="text-primary">Finanças Pessoais</span> com IA
             </h1>
 
-            {/* Subtitle */}
+            {/* Subtitle - Copy otimizada com palavras-chave */}
             <p className="max-w-xl text-sm text-gray-600 sm:text-base md:text-lg lg:max-w-2xl">
               Automatize suas finanças com <strong>IA</strong>, transforme metas
               em conquistas através de <strong>gamificação</strong> e receba
@@ -72,28 +76,28 @@ export default function Hero() {
 
             {/* Form Card */}
             <motion.div
-              className="w-full max-w-md rounded-2xl border-2 border-primary bg-white/80 p-5 shadow-lg sm:p-6 lg:max-w-xl"
+              className="w-full max-w-md rounded-2xl border-2 border-primary bg-white/80 p-4 shadow-lg sm:p-5 lg:max-w-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="mb-4 text-center text-base font-bold text-gray-900 sm:text-lg md:text-xl">
+              <h3 className="mb-3 text-center text-base font-bold text-gray-900 sm:text-lg">
                 Seja um dos primeiros a testar o Dinly
               </h3>
 
               {/* Form */}
-              <form className="flex flex-col gap-3">
+              <form className="flex flex-col gap-2.5">
                 <motion.input
                   type="email"
                   placeholder="Seu melhor e-mail"
-                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50 sm:text-base"
+                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50 sm:text-base"
                   required
                   whileFocus={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 />
                 <motion.button
                   type="submit"
-                  className="w-full rounded-xl bg-gradient-to-r from-primary to-primary-dark px-6 py-4 text-sm font-bold text-white shadow-lg sm:text-base"
+                  className="w-full rounded-xl bg-gradient-to-r from-primary to-primary-dark px-6 py-3 text-sm font-bold text-white shadow-lg sm:text-base"
                   whileHover={{
                     scale: 1.02,
                     boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
@@ -133,7 +137,7 @@ export default function Hero() {
             {/* Mobile Mascot - Visible only on mobile */}
             <div className="flex w-full justify-center lg:hidden">
               <motion.div
-                className="relative mt-12 h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]"
+                className="relative mt-6 h-[240px] w-[240px] sm:h-[280px] sm:w-[280px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{
                   opacity: 1,
@@ -175,7 +179,7 @@ export default function Hero() {
                 >
                   <img
                     src={mascot}
-                    alt="Mascote do Dinly"
+                    alt="Mascote Dinly - App de controle financeiro automático com inteligência artificial"
                     className="h-full w-full object-cover"
                   />
                 </motion.div>

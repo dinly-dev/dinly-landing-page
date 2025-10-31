@@ -23,7 +23,7 @@ export default function Partners() {
           <div className="group flex h-20 w-full max-w-[220px] items-center justify-center rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md sm:h-24 sm:max-w-[260px] md:h-24 md:w-auto md:max-w-none md:flex-1">
             <img
               src={sebrae}
-              alt="SEBRAE"
+              alt="SEBRAE - Parceiro do Dinly para inovação em aplicativos financeiros"
               className="max-h-full max-w-full object-contain opacity-60 transition-opacity group-hover:opacity-100"
             />
           </div>
@@ -32,7 +32,7 @@ export default function Partners() {
           <div className="group flex h-20 w-full max-w-[220px] items-center justify-center rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md sm:h-24 sm:max-w-[260px] md:h-28 md:w-auto md:max-w-none md:flex-1">
             <img
               src={ufrn}
-              alt="UFRN"
+              alt="UFRN - Universidade parceira no desenvolvimento de tecnologia financeira"
               className="max-h-full max-w-full object-contain opacity-60 transition-opacity group-hover:opacity-100"
             />
           </div>
@@ -41,7 +41,7 @@ export default function Partners() {
           <div className="group flex h-20 w-full max-w-[220px] items-center justify-center rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md sm:h-24 sm:max-w-[260px] md:h-28 md:w-auto md:max-w-none md:flex-1">
             <img
               src={metropoleDigital}
-              alt="Metrópole Digital"
+              alt="Metrópole Digital - Centro de pesquisa e inovação em apps de IA"
               className="max-h-full max-w-full object-contain opacity-60 transition-opacity group-hover:opacity-100"
             />
           </div>

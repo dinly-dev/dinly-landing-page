@@ -58,8 +58,8 @@ export default function Solution() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Como o <span className="text-primary">Dinly</span> Transforma Sua
-            Vida
+            Controle Financeiro Automático: Como o{" "}
+            <span className="text-primary">Dinly</span> Funciona
           </motion.h2>
           <motion.p
             className="text-base text-gray-600 sm:text-lg md:text-xl"
@@ -68,7 +68,8 @@ export default function Solution() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Seis pilares de inovação para sua liberdade financeira
+            Seis pilares de tecnologia financeira inteligente para sua liberdade
+            financeira
           </motion.p>
         </div>
 
@@ -89,10 +90,11 @@ export default function Solution() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Automação Inteligente
+              Automação de Despesas com IA
             </h3>
             <p className="text-sm text-gray-600">
-              Foto do comprovante e pronto! IA organiza tudo para você
+              Tire foto do comprovante e nossa inteligência artificial organiza
+              suas finanças automaticamente
             </p>
           </motion.div>
 
@@ -111,10 +113,11 @@ export default function Solution() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Simulador de Decisão
+              Simulador de Impacto Financeiro
             </h3>
             <p className="text-sm text-gray-600">
-              Veja o impacto antes de comprar. Decisões inteligentes sempre
+              Simule o impacto de cada compra nas suas metas. Tome decisões
+              financeiras conscientes
             </p>
           </motion.div>
 
@@ -133,10 +136,11 @@ export default function Solution() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Gamificação de Metas
+              Gamificação para Metas Financeiras
             </h3>
             <p className="text-sm text-gray-600">
-              Metas viram missões. Progresso visual e recompensas reais
+              Transforme objetivos financeiros em missões gamificadas. Progresso
+              visual e recompensas reais
             </p>
           </motion.div>
 
@@ -155,10 +159,11 @@ export default function Solution() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Insights Personalizados
+              Análise Financeira Personalizada
             </h3>
             <p className="text-sm text-gray-600">
-              Feedbacks inteligentes revelam onde você pode economizar mais
+              Insights inteligentes sobre seus gastos revelam oportunidades de
+              economia
             </p>
           </motion.div>
 
@@ -177,10 +182,11 @@ export default function Solution() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Zero Planilhas
+              Substituto de Planilhas Financeiras
             </h3>
             <p className="text-sm text-gray-600">
-              Esqueça trabalho manual. Foque em conquistar seus sonhos
+              Elimine o trabalho manual de controlar gastos. Foque em conquistar
+              seus objetivos
             </p>
           </motion.div>
 
@@ -199,10 +205,11 @@ export default function Solution() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
-              Foco no Futuro
+              Planejamento Financeiro Inteligente
             </h3>
             <p className="text-sm text-gray-600">
-              Planeje o amanhã e conquiste suas metas muito mais rápido
+              Organize suas finanças pensando no futuro. Conquiste metas
+              financeiras mais rápido
             </p>
           </motion.div>
         </div>
