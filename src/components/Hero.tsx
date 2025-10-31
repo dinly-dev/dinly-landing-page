@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="flex flex-col items-center space-y-5 text-center lg:items-start lg:text-left">
             {/* Logo */}
             <div>
-              <img src={logo} alt="Logo Dinly" className="h-14 md:h-16" />
+              <img src={logo} alt="Logo Dinly" className="h-14 md:h-20" />
             </div>
 
             {/* Main Heading */}
@@ -64,29 +64,12 @@ export default function Hero() {
             </h1>
 
             {/* Subtitle */}
-            {/* Subtitle */}
             <p className="max-w-xl text-sm text-gray-600 sm:text-base md:text-lg lg:max-w-2xl">
               Automatize suas finanças com <strong>IA</strong>, transforme metas
               em conquistas através de <strong>gamificação</strong> e receba
-              insights inteligentes. Pouco esforço, grandes conquistas.
+              insights inteligentes. <br />
+              Pouco esforço, grandes conquistas.
             </p>
-
-            {/* Alert Badge - Pulsing */}
-            <motion.div
-              className="w-full max-w-md rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] px-4 py-2.5 sm:px-6 sm:py-3 lg:max-w-xl"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              <p className="text-center text-xs font-semibold text-white sm:text-sm md:text-base">
-                🎁 Apenas os 20 primeiros ganham o Botton exclusivo do Dinly!
-              </p>
-            </motion.div>
 
             {/* Form Card */}
             <motion.div
@@ -122,6 +105,73 @@ export default function Hero() {
                 </motion.button>
               </form>
             </motion.div>
+
+            {/* Mobile Mascot - Visible only on mobile */}
+            <div className="flex w-full justify-center lg:hidden">
+              <motion.div
+                className="relative mt-12 h-[280px] w-[280px] sm:h-[320px] sm:w-[320px]"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  y: [0, -15, 0],
+                }}
+                transition={{
+                  opacity: { duration: 1, ease: "easeOut" },
+                  scale: { duration: 1, ease: "easeOut" },
+                  y: {
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    repeatType: "loop",
+                  },
+                }}
+              >
+                {/* Mascot */}
+                <motion.div
+                  className="flex h-full w-full items-center justify-center rounded-full backdrop-blur-sm"
+                  animate={{
+                    scale: [1, 1.05, 1],
+                    rotate: [-3, 3, -3],
+                  }}
+                  transition={{
+                    scale: {
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      repeatType: "loop",
+                    },
+                    rotate: {
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      repeatType: "loop",
+                    },
+                  }}
+                >
+                  <img
+                    src={mascot}
+                    alt="Mascote do Dinly"
+                    className="h-full w-full object-cover"
+                  />
+                </motion.div>
+
+                {/* Glow effect around mascot */}
+                <motion.div
+                  className="absolute inset-0 -z-10 rounded-full bg-primary/30 blur-3xl"
+                  animate={{
+                    opacity: [0.4, 0.7, 0.4],
+                    scale: [1, 1.15, 1],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    repeatType: "loop",
+                  }}
+                />
+              </motion.div>
+            </div>
           </div>
 
           {/* Right Column - Mascot Image - Hidden on mobile */}
