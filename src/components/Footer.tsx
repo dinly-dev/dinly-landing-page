@@ -20,7 +20,7 @@ export default function Footer() {
             {/* Social Media Icons - Left */}
             <div className="flex items-center gap-4">
               <a
-                href="https://instagram.com/dinly"
+                href="https://www.instagram.com/dinlyapp/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
@@ -29,7 +29,7 @@ export default function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://tiktok.com/@dinly"
+                href="https://www.tiktok.com/@dinlyapp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
@@ -38,7 +38,7 @@ export default function Footer() {
                 <TikTokIcon />
               </a>
               <a
-                href="https://linkedin.com/company/dinly"
+                href="https://www.linkedin.com/in/dinly/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-sm transition-all hover:scale-110 hover:bg-primary hover:text-white"
