@@ -10,43 +10,7 @@ import {
 
 export default function Solution() {
   return (
-    <section className="relative overflow-hidden bg-white py-12 md:py-16 lg:py-20">
-      {/* Background abstract shapes */}
-      <div className="absolute inset-0">
-        {/* Large circle top-left */}
-        <div
-          className="absolute -left-32 -top-20 h-96 w-96 rounded-full bg-primary/10"
-          style={{ filter: "blur(80px)" }}
-        />
-
-        {/* Medium circle middle-right */}
-        <div
-          className="absolute right-1/4 top-1/2 h-80 w-80 rounded-full bg-primary-light/15"
-          style={{ filter: "blur(70px)" }}
-        />
-
-        {/* Small circle bottom-right */}
-        <div
-          className="absolute -bottom-20 right-1/3 h-72 w-72 rounded-full bg-primary-lighter/20"
-          style={{ filter: "blur(60px)" }}
-        />
-
-        {/* Large ellipse bottom-left */}
-        <div
-          className="absolute -bottom-20 left-1/4 h-80 w-[500px] rounded-full bg-primary/8"
-          style={{ filter: "blur(90px)", transform: "rotate(45deg)" }}
-        />
-
-        {/* Decorative geometric shapes */}
-        <div
-          className="absolute left-1/3 top-1/4 h-64 w-64 bg-secondary/12"
-          style={{
-            borderRadius: "40% 60% 60% 40% / 40% 40% 60% 60%",
-            filter: "blur(50px)",
-          }}
-        />
-      </div>
-
+    <section className="relative py-12 md:py-16 lg:py-20">
       {/* Content */}
       <div className="container-custom relative z-10">
         {/* Title Section */}
@@ -93,8 +57,8 @@ export default function Solution() {
               Automação de Despesas com IA
             </h3>
             <p className="text-sm text-gray-600">
-              Tire foto do comprovante e nossa inteligência artificial organiza
-              suas finanças automaticamente
+              Envie uma foto ou arquivo do seu comprovante e nossa IA extrai os
+              dados para organizar suas despesas sem esforço.
             </p>
           </motion.div>
 

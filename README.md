@@ -1,73 +1,122 @@
-# React + TypeScript + Vite
+# 💰 Dinly - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Dinly Logo](https://img.shields.io/badge/Dinly-Finan%C3%A7as%20Pessoais-8B5CF6?style=for-the-badge)
+![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=for-the-badge&logo=tailwindcss)
 
-Currently, two official plugins are available:
+Landing page moderna e responsiva para o **Dinly**, aplicativo de finanças pessoais com IA e gamificação. Desenvolvida com React, TypeScript, Tailwind CSS e integração serverless com AWS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Sobre o Projeto
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+O **Dinly** é uma landing page otimizada para conversão de leads, com design moderno, animações suaves e integração completa com API serverless. A página apresenta:
 
-## Expanding the ESLint configuration
+- **Hero Section**: CTA principal com formulário de cadastro
+- **Partners**: Logos de parceiros e apoiadores
+- **Problem**: Identificação dos problemas financeiros do público
+- **Solution**: Apresentação dos 6 pilares da solução Dinly
+- **Forms**: Segundo CTA para conversão
+- **Footer**: Links sociais e copyright
+- **Admin Panel**: Painel administrativo para visualização de leads
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tecnologias
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Tecnologia           | Versão | Descrição                     |
+| -------------------- | ------ | ----------------------------- |
+| **React**            | 18.3.1 | Biblioteca para UI            |
+| **TypeScript**       | 5.6    | Superset tipado do JavaScript |
+| **Vite**             | 6.0    | Build tool ultrarrápido       |
+| **Tailwind CSS**     | 3.4    | Framework CSS utility-first   |
+| **Framer Motion**    | 12.0   | Biblioteca de animações       |
+| **React Router DOM** | 7.0    | Roteamento client-side        |
+| **Axios**            | 1.7    | Cliente HTTP                  |
+| **Zod**              | 3.24   | Validação de schemas          |
+| **Lucide React**     | 0.468  | Ícones modernos               |
+
+### Backend (Serverless)
+
+| Tecnologia      | Descrição                     |
+| --------------- | ----------------------------- |
+| **AWS Lambda**  | Funções serverless em Node.js |
+| **DynamoDB**    | Banco NoSQL serverless        |
+| **API Gateway** | Gateway HTTP REST             |
+| **CloudWatch**  | Logs e monitoramento          |
+
+## 📦 Instalação
+
+### Pré-requisitos
+
+- **Node.js**: 18+ ([Download](https://nodejs.org/))
+- **npm** ou **yarn**
+- **Git**
+
+### Passo a Passo
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/dinly-dev/dinly-landing-page.git
+cd dinly-landing-page
+
+# 2. Instale as dependências
+npm install
+# ou
+yarn install
+
+# 3. Configure as variáveis de ambiente
+cp .env.example .env
+# Edite o .env com suas credenciais
+
+# 4. Inicie o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
+
+# 5. Acesse no navegador
+# http://localhost:5173
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Configuração
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Variáveis de Ambiente (.env)
+
+Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+
+```bash
+# ===========================================
+# API Configuration
+# ===========================================
+# URL base da API serverless na AWS
+VITE_API_URL=https://btwwav9yti.execute-api.us-east-1.amazonaws.com/prod
+
+# ===========================================
+# Admin Panel Authentication
+# ===========================================
+# Senha para acessar o painel administrativo
+# IMPORTANTE: Altere esta senha em produção!
+VITE_ADMIN_PASSWORD=senhaDeExemplo123
+
+# ===========================================
+# INSTRUÇÕES
+# ===========================================
+# 1. Copie este arquivo para .env
+# 2. Substitua os valores pelos seus
+# 3. NUNCA commite o arquivo .env no Git
+# 4. Para produção, use variáveis de ambiente
+#    no seu serviço de hospedagem (Vercel, Netlify, etc)
+#
+# SEGURANÇA:
+# - Altere VITE_ADMIN_PASSWORD para uma senha forte
+# - Use geradores de senha: https://1password.com/password-generator
 ```
+
+---
+
+**Desenvolvido com 💜 pela equipe Dinly**

@@ -1,20 +1,15 @@
-import Hero from "./components/Hero";
-import Partners from "./components/Partners";
-import Problem from "./components/Problem";
-import Solution from "./components/Solution";
-import Forms from "./components/Forms";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ProtectedAdmin from "./components/ProtectedAdmin";
 
 function App() {
   return (
-    <>
-      <Hero />
-      <Partners />
-      <Problem />
-      <Solution />
-      <Forms />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<ProtectedAdmin />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
